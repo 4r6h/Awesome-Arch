@@ -169,7 +169,7 @@ backup() {
 }
 
 add_new_configs() {
-	if [ -d $PWD/.config && -d $PWD/extras ]; then
+	if [[ -d $PWD/.config && -d $PWD/extras ]]; then
 		cp -rf .config/* ~/.config/
 		cp -rf extras/mpd ~/.mpd
 		cp -rf extras/ncmpcpp ~/.ncmpcpp
